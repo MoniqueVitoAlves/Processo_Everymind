@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunes Sports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        form input, form button {
+            margin-right: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gerenciamento de Produtos</h1>
+
+    <!-- Formulário para criar ou editar produtos -->
+    <form id="formularioProdutos">
+        <input type="text" id="NomeProduto" placeholder="Nome do Produto" required>
+        <input type="text" id="CodigoProduto" placeholder="Código do Produto" required>
+        <input type="text" id="DescricaoProduto" placeholder="Descrição">
+        <input type="number" id="PrecoProduto" placeholder="Preco" required>
+        <button type="submit">Salvar produto</button>
+    </form>
+
+    <!-- Tabela para exibir os produtos -->
+    <table id="TabeladeProdutos">
+        <thead>
+            <tr>
+                <th>Código do Produto</th>
+                <th>Nome do Produto</th>   
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Exemplo de linha de produto -->
+            <tr>
+                <td>COD1409</td>
+                <td>Tenis</td>
+                <td>Tênis feminino</td>
+                <td>R$299,00</td>
+                <td>
+                    <button>Editar</button>
+                    <button>Deletar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
